@@ -28,3 +28,22 @@ getraenk hinzufuegen
 aufenhaltsort:
 
 bett (N/A) <> zuhause <> kneipe
+
+
+@startuml
+hide empty description
+
+[*] --> zuhause
+zuhause --> [*]
+
+zuhause --> trinken
+zuhause --> kneipe
+
+trinken --> zuhause
+
+trinken --> kneipe
+
+kneipe --> zuhause
+kneipe --> trinken
+
+@enduml
